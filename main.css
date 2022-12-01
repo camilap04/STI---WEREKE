@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@300;600 & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+
+
+ .brand-logo{
+    margin-left: 2%;
+    margin-top: 1%;
+ }
+
+ .nav-wrapper{
+    background-color: white;
+    color: black;
+ }
+ 
+.nav-mobile{
+    color: black;
+}
+.nav-p{
+color: black;
+}
+.title-banner{
+    display: block;
+    width: 15%;
+
+    position: absolute;
+height: 67px;
+left: 6.94%;
+right: 67.01%;
+top: 192px;
+
+/* Title 56 Semi Bold */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 56px;
+line-height: 120%;
+/* or 67px */
+
+letter-spacing: -0.04em;
+    
+}
+
+.title-banner-pink{
+
+color: #E01E5A;
+
+
+}
+
+
+
+.earings-banner{
+    position: absolute;
+width: 560px;
+height: 650px;
+left: 797px;
+top: 124px;
+}
+
+.img-banner{
+    position: absolute;
+width: 560px;
+height: 650px;
+left: 797px;
+top: 124px;
+
+}
+
+.p-banner{
+position: absolute;
+height: 27px;
+left: 6.94%;
+right: 54.51%;
+top: 499px;
+
+/* Title 18 Medium */
+
+font-family: 'Poppins', sans-serif;;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+/* identical to box height, or 27px */
+
+letter-spacing: -0.04em;
+
+/* Text Color */
+
+color: #051441;
+
+}
+.btn-3 {
+
+    position: absolute;
+height: 27px;
+left: 6.94%;
+right: 54.51%;
+top: 560px;
+    background: rgba(224, 30, 90, 1);
+    color: aliceblue;
+
+  background: linear-gradient(0deg, rgb(233, 178, 219) 0%, rgba(224, 30, 90, 1);
+  100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    
+  }
+  .btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-3:before,
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+  }
+  .btn-3:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-3:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .btn-3:hover:before {
+    height: 100%;
+
+  }
+  .btn-3:hover:after {
+    width: 100%;
+  }
+  .btn-3 span:hover{
+     color: rgb(0, 0, 0);
+  }
+  .btn-3 span:before,
+
+  .btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgba(224, 30, 90, 1);
+
+    transition: all 0.3s ease;
+  }
+  .btn-3 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-3 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3 span:hover:before {
+    height: 100%;
+  }
+  .btn-3 span:hover:after {
+    width: 100%;
+  }

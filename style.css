@@ -8,8 +8,51 @@
 }
 body{
 font-family: 'Merriweather Sans', sans-serif;
+}
 
+.initial button{
+  margin-left: 50px;
+}
+.initial-banner {
+  margin: 100px 0px;
+}
 
+td, th {
+  border: 0.5px solid rgba(57, 57, 57, 0.501) !important;
+  padding: 5px;
+  border-collapse: collapse;
+  padding: 5px !important;
+}
+#protoPerson {
+  margin: 10px 0px;
+}
+#simil-list {
+  margin: 20px 50px;
+
+}
+.proto-title {
+  display: none;
+}
+.age-range {
+  margin: 0px 0px 20px 50px;
+}
+.aggregation {
+  margin-top: 20px;
+  width: 50%;
+}
+select {
+  display: block !important;
+}
+.part-one {
+  display: flex;
+  margin: 50px;
+}
+.part-two {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.age-range button{
+  margin-right: 20px;
 }
  .brand-logo{
     margin-left: 2%;
@@ -29,25 +72,13 @@ color: black;
 }
 .title-banner{
     display: block;
-    width: 15%;
-
-    position: absolute;
-height: 67px;
-left: 6.94%;
-right: 67.01%;
-top: 192px;
-
-/* Title 56 Semi Bold */
-
+    margin-left: 50px;
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
 font-size: 56px;
-line-height: 120%;
-/* or 67px */
-
 letter-spacing: -0.04em;
-    
+    margin: 50px;
 }
 
 .title-banner-pink{
@@ -77,11 +108,6 @@ top: 124px;
 }
 
 .p-banner{
-position: absolute;
-height: 27px;
-left: 6.94%;
-right: 54.51%;
-top: 499px;
 
 /* Title 18 Medium */
 
@@ -93,19 +119,12 @@ line-height: 150%;
 /* identical to box height, or 27px */
 
 letter-spacing: -0.04em;
-
-/* Text Color */
-
+margin: 50px 50px;
 color: #051441;
 
 }
 .btn-3 {
-
-    position: absolute;
 height: 27px;
-left: 6.94%;
-right: 54.51%;
-top: 560px;
     background: rgba(224, 30, 90, 1);
     color: aliceblue;
 
