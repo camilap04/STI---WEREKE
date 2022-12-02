@@ -4,7 +4,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+font-style: normal;
+ 
 }
 body{
 font-family: 'Merriweather Sans', sans-serif;
@@ -181,4 +183,102 @@ top: 560px;
   }
   .btn-3 span:hover:after {
     width: 100%;
+  }
+
+#section1{
+  width: 100%;
+  height:  379.78px;
+  background-color: #E01E5A;
+  position: relative;
+  z-index: -1;
+ 
+ 
+
+ 
+}
+
+#banner{
+  width: 100%;
+  height: 100vh;
+
+  z-index: 1;
+}
+
+.img1{
+  position: absolute;
+  bottom: 0%;
+  
+
+}
+
+.title{
+  display: flex;
+  justify-content: end;
+  margin-right: 10%;
+  padding-top: 2%;
+  align-items: center;
+  color: white;
+}
+
+.body{
+
+  width: 30%;
+  display: flex;
+
+margin: 2rem auto;
+text-align: center;
+  color: white;
+ align:right;
+
+}
+.container-title{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 50;
+text-align: center;
+margin-top: 5%;
+font-size: 40px;
+
+}
+
+.container2-p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  text-align: center;
+  margin-left: 35%;
+  
+  }
+ 
+
+  .container2-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .container-imgs{
+    margin: 5%;
+  }
+.last-section{
+width: 100%;
+height: 50vh;
+background-color: #E01E5A;
+}
+  .container-last{
+    color: aliceblue;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   width: 50%;
+   margin: 2%;
+   padding: 3%;
+   
+
+  }
+  .container-last-text{
+    font-size: 1px%;
   }

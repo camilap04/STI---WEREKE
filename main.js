@@ -293,3 +293,5 @@ function createProtoPerson(array, category) {
   $(divProto).html(table);
   protoTitle.style.display = 'block';
 }
+
+
