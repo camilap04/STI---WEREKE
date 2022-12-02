@@ -1,17 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2? family= Poppins:wght@300;600 & display=swap');
-
+@import url('https://fonts.googleapis.com/css2? familia= Poppins:peso@100;200 & display=swap');
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;;
-font-style: normal;
+    font-style: normal;
  
 }
-body{
-font-family: 'Merriweather Sans', sans-serif;
 
-}
 
 
 
@@ -77,7 +74,6 @@ width: 560px;
 height: 650px;
 left: 797px;
 top: 124px;
-
 }
 
 .p-banner{
@@ -212,24 +208,32 @@ top: 560px;
 }
 
 .title{
-  display: flex;
-  justify-content: end;
+  position: relative;
+  
+  
   margin-right: 10%;
   padding-top: 2%;
   align-items: center;
   color: white;
+  margin-left: 50%;
+}
+title-child{
+  position: absolute;
+ 
+
 }
 
 .body{
 
+color: white;
+
+
+}
+.body-child{
+  position: relative;
+  margin-left: 50%;
+  text-align: center;
   width: 30%;
-  display: flex;
-
-margin: 2rem auto;
-text-align: center;
-  color: white;
- align:right;
-
 }
 .container-title{
 display: flex;
