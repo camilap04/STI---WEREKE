@@ -7,7 +7,6 @@ Papa.parse("datos_productos.csv", {
   complete: function (results) {
     dataBaseProducts = results.data;
   },
-
 });
 Papa.parse("datos_personas.csv", {
   download: true,
@@ -138,7 +137,7 @@ function similCosAll(protoUser) {
     magA = Math.sqrt(magA);
     magB = Math.sqrt(magB);
 
-    similCos.push([otherDataBase[contador][0], (prodPunt / (magA * magB)).toFixed(4), otherDataBase[contador][25]]);
+    similCos.push([otherDataBase[contador][0], (prodPunt / (magA * magB)).toFixed(2), otherDataBase[contador][25]]);
     user2 = [];
     contador += 1;
   }
@@ -166,7 +165,7 @@ function createTableSimil(array) {
     table += "</th>";
     //Similitud coseno
     table += "<td>";
-    table += array[i][1];
+    table += (parseFloat(array[i][1]) * 100).toFixed(0) + '%';
     table += "</td>";
 
     //Enlaces
@@ -224,21 +223,21 @@ function doAggregation(group, category) {
   for (let col = 1; col < group[0].length - 1; col++) {
     for (let fil = 0; fil < group.length; fil++) {
       var data = parseFloat(group[fil][col]);
-      switch (aggregation.options.selectedIndex + 1) {
+      switch (aggregation.options.selectedIndex) {
         //Caso naiveAverage
-        case 1:
+        case 0:
           valA += data;
           break;
         //Caso LeastMisery
-        case 2:
-          if (data <= 1) {
+        case 1:
+          if (data <= 5) {
             data = "null";
           }
           valA += data;
           break;
         //Caso MaximunPleasure
-        case 3:
-          if (data <= 3) {
+        case 2:
+          if (data <= 8) {
             data = 1;
           }
           valA += data;
@@ -252,15 +251,14 @@ function doAggregation(group, category) {
   }
   for (let j = 0; j < protoUser.length; j++) {
     if (protoUser[j] == "NaN") {
-      protoUser[j] = "0";
+      protoUser[j] = "1";
     }
   }
-
-  if (aggregation.options.selectedIndex + 1 == 3) {
+  if (aggregation.options.selectedIndex == 2) {
     for (let j = 0; j < protoUser.length; j++) {
       d = parseFloat(protoUser[j]);
-      if (d >= 4) {
-        protoUser[j] = "5";
+      if (d >= 2) {
+        protoUser[j] = "10";
       }
     }
   }
@@ -293,5 +291,3 @@ function createProtoPerson(array, category) {
   $(divProto).html(table);
   protoTitle.style.display = 'block';
 }
-
-
