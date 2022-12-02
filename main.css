@@ -279,6 +279,30 @@ background-color: #E01E5A;
    
 
   }
-  .container-last-text{
-    font-size: 1px%;
+
+
+.container-last-text{
+position: relative;
+margin-left: 5%;
+color: white;
+width: 45%;
+bottom: 15%;
+
+
+
   }
+
+  .container-last-text-child{
+    position: absolute;
+    margin: 0%;
+  
+  }
+
+    .last-img-dad{
+      position: relative;
+    
+      margin-left: 60%;
+      bottom: 95.1%;
+  
+    }
+   
